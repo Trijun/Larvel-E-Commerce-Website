@@ -1,0 +1,7 @@
+html,body {
+    min-height: 100%;
+}
+
+.column{
+    min-height: 800px;
+}
