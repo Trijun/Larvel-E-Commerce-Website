@@ -1,7 +1,80 @@
 html,body {
-    min-height: 100%;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
 }
 
 .column{
-    min-height: 800px;
+    min-height: inherit;
+    margin: 0;
+}
+
+.login-bg{
+    max-width: inherit;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.space-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    height: 75px;
+    width: inherit;
+    margin: 0;
+    padding: 0 100px;
+}
+
+.nav-top{
+    list-style-type: none;
+    color: #dddddd;
+    font-weight: 500;
+    
+}
+
+.nav-bottom{
+    width:25%
+}
+
+.banner{
+    height: 450px;
+    width: auto;
+    margin: 0;
+    background-image: url("https://cdn.shopify.com/s/files/1/0518/8249/2088/files/Campaign_11_1_1500x.jpg?v=1640809719");  
+    background-position-x: center;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.banner-title{
+    align-items:center;
+    font-size: 48px;
+    color: whitesmoke;
+}
+
+.gradient{
+    height: inherit;
+    background: linear-gradient(269.89deg, #000000 0.1%, rgba(0, 0, 0, 0) 99.9%);
+    display: flex;
+}
+
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-button{  
+ 
+    width: 200px;
+    height: 50px;
+    margin:20px;
+    color:white;
+    border: 1px solid white;
+    background-color: transparent;
 }

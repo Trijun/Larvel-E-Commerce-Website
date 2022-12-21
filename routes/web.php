@@ -14,10 +14,15 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('login');
 });
 
-Route::post('/', [UserController::class, 'login']);
+Route::post('/login', [UserController::class, 'login']);
 
-Route::get('/index', [ProductController::class, 'index']);
+Route::get('/', [ProductController::class, 'index']);
+
+
+Route::get('/product', function () {
+    return view('product');
+});
