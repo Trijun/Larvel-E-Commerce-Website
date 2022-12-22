@@ -24,5 +24,5 @@ Route::get('/', [ProductController::class, 'index']);
 
 
 Route::get('/product', function () {
-    return view('product');
+    return view('footer');
 });

@@ -26,11 +26,14 @@ html,body {
     width: inherit;
     margin: 0;
     padding: 0 100px;
+    
 }
 
 .nav-top{
     list-style-type: none;
-    color: #dddddd;
+    height: 100px;
+    background-color: black;
+    color: #ffffff;
     font-weight: 500;
     
 }
@@ -70,11 +73,204 @@ html,body {
 }
 
 .banner-button{  
- 
     width: 200px;
     height: 50px;
-    margin:20px;
+    margin:20px 0px;
     color:white;
     border: 1px solid white;
     background-color: transparent;
+}
+
+.hero-conatiner{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    padding: 100px ;
+}
+
+.hero{
+    height: 700px;
+    width:100%;
+    display: flex;
+    flex-direction: row;  
+    
+}
+
+.hero-image{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.hero-content{
+    background-color: white;
+    height: auto;
+    width: 50%;
+
+}
+
+.product-content{
+    height: 60%;
+    padding: 0px 50px 50px 100px;
+    font-size:18px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.hero-button{
+    width: 350px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.hero-title{
+    font-size: 36px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500px;
+}
+
+.ad-container{
+    height: auto ;
+    width: 100%;
+    display: flex;
+    padding: 0px 100px 150px 100px;
+}
+
+.ad-40{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.ad-60{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.ad-img{
+    height: auto;
+    width: 100%;
+    object-fit:cover;
+}
+
+.ad-content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500px;
+    
+}
+
+.ad-title{
+    width: 50%;
+    font-size: 56px;
+    text-align: left;
+}
+
+.ad-border{
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.feature-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding: 100px 150px;
+}
+
+.feature-left{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: start;
+}
+
+.feature-right{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
+}
+
+
+.flex-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.feature-icon{
+    border: 1px solid black;
+    box-shadow: 5px 5px #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: inherit;
+    margin-right: 50px;
+}
+
+.feature-content{
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.f-icon{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.review{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+
+}
+
+.review-image{
+    width:auto;
+}
+
+.review-dp{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #000000;
+    color: white;
+}
+
+.review-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+    width:80%;
 }
