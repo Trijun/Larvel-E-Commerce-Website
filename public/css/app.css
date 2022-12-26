@@ -274,3 +274,24 @@ html,body {
     padding: 0px 60px;
     width:80%;
 }
+
+.cartForm{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+
