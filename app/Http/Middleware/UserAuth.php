@@ -27,7 +27,7 @@ class UserAuth
         // new code that I have created
 
         // if($request->path()=="login" && Session::get('name')==$request->name ){
-        //     return redirect('/');
+        //     return redirect('/product');
         // }
 
         return $next($request);

@@ -1,6 +1,16 @@
 @extends('layout')
 @section('content')
 
+    @php
+        use App\Http\Controllers\ProductController;
+        $total=0;
+
+        if(Session::has('user')){
+            $total = ProductController::cartItem();
+        }
+       
+    @endphp
+
     <nav class="w-100">
         <ul class="navigation space-between nav-top ">
             <li class="nav-item">
@@ -31,7 +41,7 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-lg btn-outline" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-                <button class="btn btn-lg btn-outline" ><i class="fa-solid fa-cart-shopping"></i></button>    
+                <button class="btn btn-lg btn-outline"><a href="/cart" id="cartIcon"><i class="fa-solid fa-cart-shopping"><small class="ms-4">{{$total}}</small></i></a></button>    
             </div>
         </div>
     </div>

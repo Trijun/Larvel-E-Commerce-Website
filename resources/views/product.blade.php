@@ -1,35 +1,39 @@
 @extends('banner')
 
 @section('product')
+
+    @foreach ($products as $product)
     <div class="hero-conatiner">
         <div class="hero">
             <div class="hero-content">
-                <img class="hero-image" src="{{$products->gallery}}" alt="">
+                <img class="hero-image" src="{{$product->gallery}}" alt="">
             </div>
             <div class="hero-content">
                 <div class="product-content">
-                    <div>
-                        <h1 class="hero-title">{{$products->name}}</h1>
-                        <h4 class="mt-4">{{$products->price}}<h4>
+                    <div class="mb-3">
+                        <h1 class="hero-title">{{$product->name}}</h1>
+                        <h4 class="mt-4">$ {{$product->price}}<h4>
                     </div>
-                  
-                    <p>{{$products->description}}</p>
+                
+                    <p>{{$product->description}}</p>
                     <div class="w-100">
-                        <form action="">
-                            <div class="cartForm">
+                        <form action="/product" method="POST">
+                            @csrf
+                            <input type="hidden" name="product_id" value="{{$product->id}}">
+                            <div class="flex-row">
                                 <div class="w-60 flex-column me-4">
                                     <label for="size"><strong>Size</strong></label>
                                     <select name="size" class="form-select form-select-lg mt-3" id="size">
-                                        <option value="XS">S</option>
-                                        <option value="XS">M</option>
-                                        <option value="XS">L</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
                                     </select>
                                 </div>
                                 <div class="w-40 flex-column ">
                                     <label for="color"><strong>Color</strong></label>
                                     <select name="color" class=" form-select form-select-lg mt-3" id="color">
-                                        <option value="black">black</option>
-                                        <option value="white">white</option>
+                                        <option value="Black">Black</option>
+                                        <option value="White">White</option>
                                     </select>
                                 </div>
                             </div>
@@ -40,6 +44,7 @@
             </div>
         </div>
     </div>
+    @endforeach
     
     @yield('advertisement')
 @endsection

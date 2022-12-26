@@ -22,5 +22,8 @@ Route::post('/login', [UserController::class, 'login']);
 
 Route::get('/product', [ProductController::class, 'index']);
 
+Route::post('/product', [ProductController::class, 'store']);
 
+
+Route::get('/cart', [ProductController::class, 'showCart']);
 

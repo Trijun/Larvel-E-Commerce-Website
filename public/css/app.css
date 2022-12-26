@@ -275,10 +275,9 @@ html,body {
     width:80%;
 }
 
-.cartForm{
+.flex-row{
     display: flex;
     flex-direction: row;
-
 }
 
 .flex-column{
@@ -294,4 +293,40 @@ html,body {
     width: 40%;
 }
 
+#cartIcon{
+    color: inherit;
+    text-decoration: none;
+}
+
+.cart-image{
+    height: auto;
+    width: 100%;
+    object-fit:cover;
+}
+
+.cart-card{
+    height: 350px;
+}
+
+.cart-buttons{
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.cart-quantity{
+    align-items: flex-end;
+}
+
+.border-top{
+    border-top: 0.5px solid #000000;
+    padding-top: 50px;
+}
+
+.border-bottom{
+    border-bottom: 0.5px solid #000000;
+    padding-bottom: 20px;
+}
 

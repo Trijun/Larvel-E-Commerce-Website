@@ -17,16 +17,22 @@ class UserController extends Controller
 
             // tried this code but it doesn't work
             
-            $req->session()->put('user',$user['name']);
+            $req->session()->put('user',$user);
+            error_log(Session::get('user'));
+            error_log($req->session()->has('user'));
 
             // new code that I have created
             
             // Session::put('name',$user->name); 
 
-            return redirect('/');
+            return redirect('/product');
         }
         else{
+            error_log(Session::get('user'));
+            error_log($req->session()->has('user'));
             return "username and password is not matched";
+            
         } 
+        
     }  
 }
