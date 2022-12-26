@@ -4,16 +4,16 @@
     <div class="hero-conatiner">
         <div class="hero">
             <div class="hero-content">
-                <img class="hero-image" src="https://cdn.shopify.com/s/files/1/0518/8249/2088/products/packagecorrection_1_-min_1100x.png?v=1623758037" alt="">
+                <img class="hero-image" src="{{$products->gallery}}" alt="">
             </div>
             <div class="hero-content">
                 <div class="product-content">
                     <div>
-                        <h1 class="hero-title">AZUNDI Boxer-Briefs</h1>
-                        <h4 class="mt-4">$30.00</h4>
+                        <h1 class="hero-title">{{$products->name}}</h1>
+                        <h4 class="mt-4">{{$products->price}}<h4>
                     </div>
                   
-                    <p>An ode to classic men’s boxer-briefs. Crafted with the finest fabric for the most pleasurable wearing experience, featuring a supportive yet silky waistband with our logo hand-pressed on each pair. 95% Modal 5% Elastane. Enjoy our holiday offer.</p>
+                    <p>{{$products->description}}</p>
                     <button class="hero-button">ADD TO CART</button>
                 </div>
             </div>

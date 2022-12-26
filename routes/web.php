@@ -20,9 +20,7 @@ Route::get('/login', function () {
 
 Route::post('/login', [UserController::class, 'login']);
 
-Route::get('/', [ProductController::class, 'index']);
+Route::get('/product', [ProductController::class, 'index']);
 
 
-Route::get('/product', function () {
-    return view('footer');
-});
+
