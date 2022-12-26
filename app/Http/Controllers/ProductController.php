@@ -11,8 +11,8 @@ class ProductController extends Controller
     
     function index()
     {
-        // return Product::all();
-
-        return redirect('/product');
+        $products = Product::all();
+        return view('footer',['products'=>$products[0]]);
+        
     }
 }
