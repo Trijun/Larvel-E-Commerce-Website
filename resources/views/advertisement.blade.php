@@ -7,8 +7,8 @@
             <div class="mb-5">
                 <img  class="ad-img" src="https://cdn.shopify.com/s/files/1/0518/8249/2088/files/8005847_750x.jpg?v=1642724056" alt="">
             </div>
-            <div class="ad-content ad-border">
-                <h1 class="ad-title">
+            <div class="content content-border">
+                <h1 class="content-title">
                     UNBOX.
                     WEAR.
                     LOVE.
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="ad-60">
-            <div class="ad-content mb-5">
+            <div class="content mb-5">
                 <h1>
                     OUR MISSION IS YOU.
                 </h1>
@@ -56,7 +56,7 @@
         </button>
         </div>
     </div>
-    <div class="ad-content mb-5">
+    <div class="content mb-5">
         <h1 class="m-3">
             AZUNDI Boxer-Briefs
         </h1>
