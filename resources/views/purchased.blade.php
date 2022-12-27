@@ -4,7 +4,7 @@
 <div class="flex-box w-100 py-5 my-5">
 
     
-    <div class="order-card w-75 px-5" >
+    <div class="cart-card w-75 px-5" >
         <div class="card text-center">
             <div class="card-header">
               AZUNDI

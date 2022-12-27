@@ -12,8 +12,12 @@
                 <h5 class="text-center mb-5">
                     Start your Shopping Experience!!
                 </h5>
-                <form action="/login" method="POST">
+                <form action="/register" method="POST">
                     @csrf
+                    <div class="mb-3 form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="input" name ="name" class="form-control">
+                    </div>
                     <div class="mb-3 form-group">
                         <label for="email" class="form-label">Email address</label>
                         <input type="email" name ="email" class="form-control">

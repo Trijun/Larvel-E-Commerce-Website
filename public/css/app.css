@@ -9,9 +9,11 @@ html,body {
 }
 
 .login-bg{
-    max-width: inherit;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
+    background: url("https://cdn.shopify.com/s/files/1/0518/8249/2088/files/Campaign_11_1_1500x.jpg?v=1640809719");
+    background-size: cover;
 }
 
 .space-between{
