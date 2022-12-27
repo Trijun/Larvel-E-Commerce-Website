@@ -14,6 +14,7 @@ use App\Http\Controllers\ProductController;
 |
 */
 
+
 Route::get('/login', function () {
     return view('login');
 });
@@ -27,3 +28,10 @@ Route::post('/product', [ProductController::class, 'store']);
 
 Route::get('/cart', [ProductController::class, 'showCart']);
 
+Route::get('/removeItem/{id}', [ProductController::class, 'removeCartItem']);
+
+Route::post('/updateItem', [ProductController::class, 'updateCartItem']);
+
+Route::get('/order', [ProductController::class, 'order']);
+
+Route::get('/my-orders', [ProductController::class, 'showOrders']);

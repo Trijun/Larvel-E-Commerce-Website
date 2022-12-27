@@ -14,21 +14,21 @@
     <nav class="w-100">
         <ul class="navigation space-between nav-top ">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/product">Home</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Collection</a>
+            <a class="nav-link" href="/product">Collection</a>
             </li>
             <li>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/product">
                     <img src="https://cdn.shopify.com/s/files/1/0518/8249/2088/files/logo_140x.png?v=1613713768" alt="Logo" width="auto" height="24" class="d-inline-block align-text-top">
                 </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" >About</a>
+            <a class="nav-link" href="/product">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">Blog</a>
+                <a class="nav-link" href="/product">Blog</a>
             </li>
         </ul>
     </nav>

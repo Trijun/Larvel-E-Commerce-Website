@@ -128,6 +128,15 @@ html,body {
     color: #ffffff;
 }
 
+.hero-button-outlined{
+    width: 350px;
+    height: 60px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+}
+
 .hero-title{
     font-size: 36px;
     font-family: 'Rubik', sans-serif;
@@ -308,25 +317,65 @@ html,body {
     height: 350px;
 }
 
-.cart-buttons{
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    background-color: #ffffff;
-    border: 1px solid rgb(0, 0, 0);
+.cart-button-confirm{
+    width: 200px;
+    height: 50px;
+    margin:20px 0px;
+    color:rgb(0, 0, 0);
+    border: 1px solid black;
+    background-color: white;
 }
 
-.cart-quantity{
-    align-items: flex-end;
+.cart-button-remove{
+    width: 200px;
+    height: 50px;
+    margin:20px 0px;
+    color:white;
+    background-color: black;
 }
 
-.border-top{
-    border-top: 0.5px solid #000000;
+
+.top-border{
+    border-top: 0.5px solid #878787;
     padding-top: 50px;
 }
 
-.border-bottom{
-    border-bottom: 0.5px solid #000000;
+.bottom-border{
+    border-bottom: 0.5px solid #878787;
     padding-bottom: 20px;
 }
 
+.remove-decorations{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.align-end{
+    align-items: center;
+    justify-content:end;
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.align-middle{
+    align-items: center;
+}
+
+.align-between{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order-card{
+    height: 100px;
+    background-color: #f6f6f6;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+.justify-center{
+    justify-content: center;
+}

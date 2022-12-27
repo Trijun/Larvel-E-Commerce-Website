@@ -37,6 +37,21 @@
                                     </select>
                                 </div>
                             </div>
+                            <div class="flex-row mt-4">
+                                <div class="w-60 flex-column me-4">
+                                    <label for="size"><strong>Quantity</strong></label>
+                                    <select name="quantity" class="form-select form-select-lg mt-3" id="size">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div class="w-40 flex-column ">
+                                    {{-- spacer --}}
+                                </div>
+                            </div>
                             <input type="submit" class="hero-button mt-4" value="ADD TO CART">
                         </form>
                     </div>
